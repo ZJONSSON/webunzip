@@ -1,0 +1,24 @@
+{
+  "name": "webunzip",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "webunzip": "index.js"
+  },
+  "author": "https://github.com/ZJONSSON",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "~3.4.7",
+    "fstream": "~1.0.10",
+    "inquirer": "~2.0.0",
+    "minimist": "~1.2.0",
+    "multi-progress": "~2.0.0",
+    "progress": "~1.1.8",
+    "request": "~2.79.0",
+    "unzipper": "~0.8.0"
+  }
+}
