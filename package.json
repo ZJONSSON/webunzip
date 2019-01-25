@@ -1,6 +1,6 @@
 {
   "name": "webunzip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,6 @@
     "multi-progress": "~2.0.0",
     "progress": "~1.1.8",
     "request": "~2.79.0",
-    "unzipper": "~0.8.0"
+    "unzipper": "~0.9.10"
   }
 }
