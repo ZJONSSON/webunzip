@@ -12,13 +12,13 @@ usage:
 webunzip [url]
 ```
 
-Example:  Unzipping selected files from a 500mb archive in less than 500ms
+Example:  Unzipping selected files from a 1.2gb archive in less than 100ms
 ```
-webunzip http://www2.census.gov/geo/tiger/TIGER2015/ZCTA5/tl_2015_us_zcta510.zip
+webunzip https://dumps.wikimedia.org/other/poty/poty2007.zip
 ```
 You can then select the files you want to unzip immediately using the arrow keys and space to select. 
 
-![image](https://cloud.githubusercontent.com/assets/1082488/22176508/5e9496d8-dfda-11e6-9261-cbca8d89d80d.png)
+![image](https://user-images.githubusercontent.com/1082488/62337979-bffa5100-b4a4-11e9-97ff-f34a30ecdf2d.png)
 
 When selection is done, press enter to start concurrent download/unzip of the selected files.
-![image](https://cloud.githubusercontent.com/assets/1082488/22176517/91dd2e10-dfda-11e6-9fed-25ec5efbe203.png)
+![image](https://user-images.githubusercontent.com/1082488/62337992-cee10380-b4a4-11e9-826b-fbe84ce9a652.png)

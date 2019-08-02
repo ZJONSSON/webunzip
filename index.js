@@ -23,7 +23,7 @@ unzipper.Open.url(request,{url: argv._[0]})
       type: 'checkbox',
       message: 'Select files to unzip',
       name: 'files',
-      choices: d.files.map(function(d,i) {
+      choices: d.files.filter(d => d.uncompressedSize).map(function(d,i) {
         return {name:[' ',d.path,humanFileSize(d.uncompressedSize)].join(' '),value:d};
       })
     }
@@ -53,4 +53,9 @@ unzipper.Open.url(request,{url: argv._[0]})
           .on('error',reject);
       });
     });
-  }));
+  }))
+  .catch(e => {
+    let message = e.message || e;
+    if (message == 'FILE_ENDED') message = 'Not a valid zip file';
+    console.error(`Error: ${message}`);
+  });
